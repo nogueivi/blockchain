@@ -1,7 +1,7 @@
-# U-Chain
+# Universal Chain - U-Chain
 This is an example of cryptocurrency project development
 
-Only for learning purposes
+Created for learning purposes
 
 ### Description
 You will be able to find the different folders/files:
@@ -16,5 +16,4 @@ You will be able to find the different folders/files:
 3. Run project: ```docker-compose up```
 
 ### Mentions
-
 Example of new cryptocurrency with ReactJS/Java
