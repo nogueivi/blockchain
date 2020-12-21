@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/nogueivi/blockchain/blob/main/resources/logo.png?raw=true" alt="U-Chain"/>
+</p>
+
 # Universal Chain - U-Chain
 This is an example of cryptocurrency project development
 
@@ -15,5 +19,6 @@ You will be able to find the different folders/files:
 2. If needed install docker-compose: https://docs.docker.com/compose/install/
 3. Run project: ```docker-compose up```
 
-### Mentions
-Example of new cryptocurrency with ReactJS/Java
+### Contributions
+You are free to make suggestions or contributions throught pull request. I will be glad integrate them.
+
