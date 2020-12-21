@@ -1,0 +1,38 @@
+version: "3.1"
+
+services:
+  database:
+    image: my_database
+    restart: unless-stopped
+    build:
+      context: ./database/
+    ports:
+      - "5432:5432"
+    networks:
+      - my_network
+    
+  backend:
+    image: my_backend
+    build:
+      context: ./backend/
+    ports: 
+      - "8080:8080"
+    networks:
+      - my_network
+    depends_on:
+      - database
+
+  frontend:
+    image: my_frontend
+    build:
+      context: ./frontend/
+    ports:
+      - "8080:8080"
+    networks:
+      - my_network
+    depends_on:
+      - backend
+
+networks:
+  my_network:
+    driver: bridge
