@@ -1,12 +1,20 @@
 # backend
-backend/target/
-backend/.vscode/
+backend/dist
+backend/target
+backend/.idea
+backend/.settings
+backend/.vscode
+backend/*.iml
+backend/*.ipr
+backend/*.iws
 
 # frontend
-frontend/node_modules
 frontend/build
+frontend/node_modules
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
 # others
+.DS_Store
+.env.local
