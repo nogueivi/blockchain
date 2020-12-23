@@ -2,15 +2,21 @@ package com.blockchain.ucoin.model;
 
 import com.blockchain.ucoin.utils.SecurityUtils;
 import java.util.Date;
-import lombok.extern.log4j.Log4j2;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import lombok.Data;
 
 @Data
-@Log4j2
-public class Block {
+@Entity
+@Table(name = "blocks")
+public class Block extends BaseEntity {
+	
     private String data;
+    
     private String hash;
+    
     private String prevHash;
+    
     private long timestamp;
     
     public Block(String data, String prevHash) { 
@@ -18,7 +24,6 @@ public class Block {
         this.hash = SecurityUtils.encode(data);
         this.prevHash = prevHash; 
         this.timestamp = new Date().getTime();
-        log.info("Creating block with hash: {}", this.hash);
     }
    
 }
