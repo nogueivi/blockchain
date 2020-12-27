@@ -3,7 +3,7 @@ version: "3.1"
 services:
   database:
     image: my_database
-    restart: unless-stopped
+    restart: always
     build:
       context: ./database/
     ports:
@@ -27,7 +27,7 @@ services:
     build:
       context: ./frontend/
     ports:
-      - "8080:8080"
+      - "3000:3000"
     networks:
       - my_network
     depends_on:
