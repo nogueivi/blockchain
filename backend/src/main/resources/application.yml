@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://database:5432/uchain
+    url: jdbc:postgresql://db:5432/uchain
     username: uchain
     password: password
     driver-class-name: org.postgresql.Driver

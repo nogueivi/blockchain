@@ -1,8 +1,12 @@
 package com.blockchain.ucoin.utils;
 
 import java.nio.charset.StandardCharsets;
+
+import org.springframework.stereotype.Service;
+
 import com.google.common.hash.Hashing;
 
+@Service
 public class SecurityUtils {
     
     public static String encode(String text) {

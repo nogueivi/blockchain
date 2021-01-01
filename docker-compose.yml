@@ -1,9 +1,9 @@
 version: "3.1"
 
 services:
-  database:
+  db:
     image: my_database
-    restart: always
+    container_name: "postgres"
     build:
       context: ./database/
     ports:
@@ -13,6 +13,7 @@ services:
     
   backend:
     image: my_backend
+    container_name: "backend"
     build:
       context: ./backend/
     ports: 
@@ -20,10 +21,11 @@ services:
     networks:
       - my_network
     depends_on:
-      - database
+      - db
 
   frontend:
     image: my_frontend
+    container_name: "frontend"
     build:
       context: ./frontend/
     ports:
