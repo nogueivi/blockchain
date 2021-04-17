@@ -1,7 +1,10 @@
 # backend
+backend/bin
 backend/dist
 backend/target
+backend/.classpath
 backend/.idea
+backend/.project
 backend/.settings
 backend/.vscode
 backend/*.iml
